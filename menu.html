@@ -1,0 +1,76 @@
+<!-- menu.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menu - Delicious Bites</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page active">
+      <h1>Delicious Bites Menu</h1>
+
+      <div id="cart">
+        <h3>🛒 Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <p id="total">Total: $0.00</p>
+      </div>
+
+      <h2>Appetizers</h2>
+      <ul>
+        <li>
+          <span class="food-name">Bruschetta</span> -
+          <span class="price">$6.99</span><br />
+          <a href="bruschetta.html"
+            ><img src="images/bruschetta.jpeg" class="image" alt="Bruschetta"
+          /></a>
+          <br /><button onclick="addToCart('Bruschetta', 6.99)">
+            Add to Cart
+          </button>
+        </li>
+        <li>
+          <span class="food-name">Garlic Bread</span> -
+          <span class="price">$4.99</span><br />
+          <a href="garlicbread.html"
+            ><img
+              src="images/garlicbread.jpeg"
+              class="image"
+              alt="Garlic Bread"
+          /></a>
+          <br /><button onclick="addToCart('Garlic Bread', 4.99)">
+            Add to Cart
+          </button>
+        </li>
+      </ul>
+
+      <h2>Desserts</h2>
+      <ul>
+        <li>
+          <span class="food-name">Cheesecake</span> -
+          <span class="price">$5.99</span><br />
+          <a href="cheesecake.html"
+            ><img src="images/cheesecake.jpeg" class="image" alt="Cheesecake"
+          /></a>
+          <br /><button onclick="addToCart('Cheesecake', 5.99)">
+            Add to Cart
+          </button>
+        </li>
+      </ul>
+
+      <h2>Beverages</h2>
+      <ul>
+        <li>
+          <span class="food-name">Coffee</span> -
+          <span class="price">$2.99</span><br />
+          <a href="coffee.html"
+            ><img src="images/coffee.jpeg" class="image" alt="Coffee"
+          /></a>
+          <br /><button onclick="addToCart('Coffee', 2.99)">Add to Cart</button>
+        </li>
+      </ul>
+
+      <a href="index.html"><button>Back to Intro</button></a>
+    </div>
+  </body>
+</html>
